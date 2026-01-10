@@ -110,9 +110,9 @@ ${form.message || "No special request"}
               >
                 <option value="">Select Service</option>
                 <option>Bridal Makeup</option>
-                <option>Facial Treatment</option>
+                <option>Facial</option>
+                <option>Baby Haircut</option>
                 <option>Hair Styling</option>
-                <option>Mehndi</option>
                 <option>Manicure & Pedicure</option>
                 <option>Threading & Waxing</option>
               </select>

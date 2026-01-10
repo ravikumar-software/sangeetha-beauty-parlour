@@ -17,7 +17,7 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    default: "Sangeetha Beauty Parlour – Vazhga Valamudan",
+    default: "Sangeetha Beauty Parlour | Beauty & Wellness in Chennai",
     template: "%s | Sangeetha Beauty Parlour",
   },
   description:

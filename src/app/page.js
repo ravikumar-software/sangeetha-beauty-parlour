@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Sangeetha Beauty Parlour – Vazhga Valamudan</title>
+        <title>Sangeetha Beauty Parlour</title>
         <meta
           name="description"
           content="Premium beauty, bridal, skincare and haircare services in Perambur, Chennai."
@@ -39,7 +39,7 @@ export default function HomePage() {
             <p className="mt-6 text-lg text-gray-600 max-w-xl">
               Welcome to{" "}
               <span className="font-semibold text-purple-600">
-                Sangeetha Beauty Parlour – Vazhga Valamudan
+                Sangeetha Beauty Parlour - Beauty & Wellness in Chennai
               </span>
               , where beauty, care, and confidence come together. Experience
               premium beauty services designed just for you.

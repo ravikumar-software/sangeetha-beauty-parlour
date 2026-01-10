@@ -1,27 +1,30 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import Slider from 'react-slick'
+import { useState } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const allGallery = [
-  { src: '/images/gallery/bridal1.jpg', category: 'Bridal' },
-  { src: '/images/gallery/bridal2.jpg', category: 'Bridal' },
-  { src: '/images/gallery/hair1.jpg', category: 'Hair' },
-  { src: '/images/gallery/hair2.jpg', category: 'Hair' },
-  { src: '/images/gallery/skin1.jpg', category: 'Skin' },
-  { src: '/images/gallery/skin2.jpg', category: 'Skin' },
-]
+  { src: "/images/gallery/bridal1.jpg", category: "Bridal" },
+  { src: "/images/gallery/bridal2.jpg", category: "Bridal" },
+  { src: "/images/gallery/hair1.jpg", category: "Hair" },
+  { src: "/images/gallery/hair2.jpg", category: "Hair" },
+  { src: "/images/gallery/skin1.jpg", category: "Skin" },
+  { src: "/images/gallery/skin2.jpg", category: "Skin" },
+];
 
-const categories = ['All', 'Bridal', 'Hair', 'Skin']
+const categories = ["All", "Bridal", "Hair", "Skin"];
 
 export default function GalleryPage() {
-  const [activeCategory, setActiveCategory] = useState('All')
+  const [activeCategory, setActiveCategory] = useState("All");
   const filteredGallery =
-    activeCategory === 'All'
+    activeCategory === "All"
       ? allGallery
-      : allGallery.filter((img) => img.category === activeCategory)
+      : allGallery.filter((img) => img.category === activeCategory);
 
   const sliderSettings = {
     dots: true,
@@ -30,12 +33,13 @@ export default function GalleryPage() {
     speed: 700,
     autoplaySpeed: 2500,
     arrows: false,
-  }
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
     <div className="bg-gradient-to-br from-purple-50 to-pink-50 py-12 px-4">
       <div className="max-w-6xl mx-auto space-y-12">
-
         {/* Heading */}
         <motion.h2
           className="text-4xl font-bold text-center text-purple-700"
@@ -75,8 +79,8 @@ export default function GalleryPage() {
               key={cat}
               className={`px-4 py-2 rounded-full text-sm font-medium shadow ${
                 activeCategory === cat
-                  ? 'bg-purple-600 text-white'
-                  : 'bg-white text-purple-700 hover:bg-purple-100'
+                  ? "bg-purple-600 text-white"
+                  : "bg-white text-purple-700 hover:bg-purple-100"
               } transition`}
               onClick={() => setActiveCategory(cat)}
             >
@@ -106,5 +110,5 @@ export default function GalleryPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
