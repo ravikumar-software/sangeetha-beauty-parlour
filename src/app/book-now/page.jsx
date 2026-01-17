@@ -21,16 +21,16 @@ export default function BookNowPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const whatsappNumber = "919600185783"; // 🔴 Replace with your WhatsApp number
+    const whatsappNumber = "919841158495"; // 🔴 Replace with your WhatsApp number
 
     const message = `
 🌸 *New Appointment Request* 🌸
 
-👩 Name: ${form.name}
-📞 Mobile: ${form.mobile}
-💄 Service: ${form.service}
-📅 Date: ${form.date}
-⏰ Time: ${form.time}
+ Name: ${form.name}
+Mobile: ${form.mobile}
+Service: ${form.service}
+Date: ${form.date}
+Time: ${form.time}
 
 📝 Message:
 ${form.message || "No special request"}
@@ -115,6 +115,7 @@ ${form.message || "No special request"}
                 <option>Hair Styling</option>
                 <option>Manicure & Pedicure</option>
                 <option>Threading & Waxing</option>
+                <option>Eyebrows</option>
               </select>
             </div>
 
