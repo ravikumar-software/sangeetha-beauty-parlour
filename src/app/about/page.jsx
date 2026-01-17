@@ -12,6 +12,7 @@ export default function AboutPage() {
           className="bg-white/90 backdrop-blur p-8 md:p-12 rounded-3xl shadow-xl space-y-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-purple-700">
             About Sangeetha Beauty Parlour
@@ -19,10 +20,38 @@ export default function AboutPage() {
 
           <p className="text-lg text-gray-700 leading-relaxed">
             <strong>Sangeetha Beauty Parlour</strong> is a women-led beauty and
-            wellness destination located in Chennai. With over{" "}
-            <strong>5+ years of experience</strong>, we are dedicated to
-            enhancing natural beauty through expert care and premium services.
+            wellness destination in{" "}
+            <strong>Kennedy Square, Thiru-Vi-Ka Nagar, Perambur,Chennai</strong>
+            , known for quality care, hygiene, and personalized services.
           </p>
+
+          <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+            <p>
+              <strong>Sangeetha Ravikumar</strong>, Founder & Lead Beauty
+              Expert, holds a B.Com from{" "}
+              <strong>Queen Mary’s College, Chennai</strong> and a full-time
+              M.B.A from{" "}
+              <strong>Alagappa Institute of Management, Karaikudi</strong>.
+            </p>
+
+            <p>
+              With over <strong>7+ years of experience</strong>, she combines
+              professional expertise with creative artistry to deliver premium
+              beauty solutions.
+            </p>
+
+            <p>
+              A <strong>key member of TIBEA</strong> (Tamil Nadu Beauty &
+              Aesthetics Association), she actively contributes to industry
+              training and beauty awareness initiatives.
+            </p>
+
+            <p>
+              Under her leadership, Sangeetha Beauty Parlour has become a
+              trusted name for bridal makeup, skin care, hair care, and wellness
+              services—helping women feel confident, cared for, and radiant.
+            </p>
+          </div>
 
           <p className="text-lg text-gray-700 leading-relaxed">
             Our certified professionals combine traditional beauty practices
