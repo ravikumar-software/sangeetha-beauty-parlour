@@ -24,15 +24,15 @@ export default function BookNowPage() {
     const whatsappNumber = "919841158495"; // 🔴 Replace with your WhatsApp number
 
     const message = `
-🌸 *New Appointment Request* 🌸
+*-New Appointment Request-*
 
- Name: ${form.name}
+Name: ${form.name}
 Mobile: ${form.mobile}
 Service: ${form.service}
 Date: ${form.date}
 Time: ${form.time}
 
-📝 Message:
+Message:
 ${form.message || "No special request"}
   `;
 
